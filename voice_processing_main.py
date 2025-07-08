@@ -7,7 +7,7 @@ import subprocess
 import shlex
 import serial
 import re
-from pypinyin import pinyin, Style
+from pypinyin import pinyin, Stylea
 from edge_tts import Communicate
 from playsound import playsound
 import asyncio
