@@ -239,8 +239,8 @@ def main():
     # 创建平衡的数据集
     print("正在创建平衡数据集...")
     train_dataset = BalancedTrafficDataset(
-        root_dir='E:/code/qianru/amap_traffic_final_train_data',
-        json_file='E:/code/qianru/amap_traffic_final_train.json',
+        root_dir='',
+        json_file='',
         train=True,
         transform=data_aug.train_transform,
         balance_classes=True  # 启用类别平衡
@@ -248,8 +248,8 @@ def main():
     
     # 验证集不需要平衡
     val_dataset = BalancedTrafficDataset(
-        root_dir='E:/code/qianru/amap_traffic_final_train_data',
-        json_file='E:/code/qianru/amap_traffic_final_train.json',
+        root_dir='',
+        json_file='',
         train=False,
         transform=data_aug.val_transform,
         balance_classes=False  # 不平衡验证集
